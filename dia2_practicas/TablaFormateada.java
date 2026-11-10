@@ -2,7 +2,7 @@ package dia2_practicas;
 
 public class TablaFormateada {
       public static void main(String[] args) {
-        System.out.println("Listado de \"Ambulia\"\n");
+        System.out.println("Listado de \"Plantas\"\n");
         System.out.println("Producto\tPrecio");
         System.out.println("--------\t------");
         System.out.println("Ficus\t\t12.50 €");
