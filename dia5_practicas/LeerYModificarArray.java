@@ -1,4 +1,4 @@
-package dia6_practicas;
+package dia5_practicas;
 // Define la clase para practicar el acceso a casillas concretas de un array
 // (archivo LeerYModificarArray.java)
 public class LeerYModificarArray {
