@@ -1,4 +1,5 @@
-// Define la clase principal para probar nuestro primer bucle (archivo
+
+package dia4_practicas;// Define la clase principal para probar nuestro primer bucle (archivo
 // PrimerWhile.java)
 public class PrimerWhile {
  // Punto de entrada obligatorio donde arranca el programa
