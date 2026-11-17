@@ -1,6 +1,7 @@
 package dia6_practicas;
 
-public class Principal {// Define la clase principal que arranca el programa (se guarda en otro archivo
+public class Principal {
+    // Define la clase principal que arranca el programa (se guarda en otro archivo
 // llamado Principal.java)
  // Punto de entrada donde comienza la ejecución en el servidor
  public static void main(String[] args) {
