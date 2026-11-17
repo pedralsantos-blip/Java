@@ -21,6 +21,7 @@ public class Alumno {
  // Muestra el contenido del atributo 'notaMedia' de ese alumno concreto
  System.out.println("Nota media: " + notaMedia);
  // Cierra el método mostrarDatos
+ System.out.println("/=/=/=/=/=/=/=/=/=");
  }
 // Cierra la definición de la clase (molde) Alumno
 }
