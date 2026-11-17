@@ -43,6 +43,9 @@ public class PrincipalLibro {  public static void main(String[] args) {
         libro4.mostrarFicha();
        
     }
+
+public PrincipalLibro() {
+}
 }
     
 
