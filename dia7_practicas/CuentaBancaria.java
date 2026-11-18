@@ -1,37 +1,45 @@
-
-// Define la clase CuentaBancaria (archivo CuentaBancaria.java)
+// Define la clase CuentaBancaria con sobrecarga de constructores (archivo
+// CuentaBancaria.java)
 public class CuentaBancaria {
- // Titular de la cuenta
+ // Atributo privado para el titular
  private String titular;
- // Saldo actual
+ // Atributo privado para el saldo
  private double saldo;
- // Constructor para crear la cuenta con su titular y saldo inicial
- public CuentaBancaria(String titular, double saldoInicial) {
- // Guarda el titular
+ // 1. Constructor completo: recibe titular y saldo inicial
+ public CuentaBancaria(String titular, double saldo) {
+ // Asigna el titular recibido
  this.titular = titular;
- // Valida que el saldo inicial no sea negativo
- if (saldoInicial >= 0) {
- // Guarda el saldo válido
- this.saldo = saldoInicial;
+ // Igual que en la versión del apartado 6: no admitimos un saldo inicial
+ // negativo
+ if (saldo >= 0) {
+ // Asigna el saldo recibido
+ this.saldo = saldo;
  } else {
- // Si era negativo, empieza en cero
+ // Si era negativo, la cuenta empieza en cero
  this.saldo = 0.0;
  }
- // Cierra el constructor
+ // Cierra el constructor completo
  }
- // Método de instancia para añadir dinero
+ // 2. Constructor sobrecargado: recibe solo el titular
+ public CuentaBancaria(String titular) {
+ // Encadenamiento: llama al constructor completo de arriba fijando el
+ // saldo a 0.0
+ this(titular, 0.0);
+ // Cierra el constructor corto
+ }
+ // Método para añadir dinero a la cuenta
  public void ingresar(double cantidad) {
+ // Comprueba que la cantidad sea positiva
  if (cantidad > 0) {
- // Suma la cantidad al saldo de este objeto concreto
+ // Actualiza el saldo interno
  this.saldo += cantidad;
  }
  // Cierra ingresar
  }
- // Método de instancia para imprimir el estado de la cuenta
- public void mostrarSaldo() {
- System.out.println("Titular: " + this.titular + " | Saldo actual: "
- + this.saldo + " €");
- // Cierra mostrarSaldo
+ // Método para imprimir el estado de la cuenta
+ public void mostrarDatos() {
+ System.out.println("Titular: " + titular + " | Saldo: " + saldo + " €");
+ // Cierra mostrarDatos
  }
 // Cierra la clase CuentaBancaria
 }

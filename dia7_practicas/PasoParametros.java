@@ -1,5 +1,5 @@
 
-    // Demuestra la diferencia entre pasar un int y pasar un objeto (archivo
+ // Demuestra la diferencia entre pasar un int y pasar un objeto (archivo
 // PasoParametros.java, junto a Alumno.java)
 public class PasoParametros {
  // Recibe una COPIA del número ('static', como main, para poder llamarlo
