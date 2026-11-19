@@ -10,18 +10,15 @@ public class ProductoServidor {
         this.precio = (precio < 0) ? 0 : precio;
         this.stock = (stock < 0) ? 0 : stock;
     }
-
     // Constructor abreviado
     public ProductoServidor(String nombre, double precio) {
         this(nombre, precio, 10);
     }
-
     // Métodos
     public void mostrarFicha() {
         System.out.println("Producto: " + nombre + " | Precio: " + precio
                 + " € | Stock disponible: " + stock + " uds.");
     }
-
     public void vender(int cantidad) {
         if (cantidad <= 0) {
             System.out.println("Error: La cantidad debe ser mayor que cero.");
@@ -33,7 +30,6 @@ public class ProductoServidor {
             System.out.println("Unidades que quedan en el almacén: " + stock);
         }
     }
-
     public void reponerStock(int cantidadNueva) {
         if (cantidadNueva > 0) {
             stock += cantidadNueva;
