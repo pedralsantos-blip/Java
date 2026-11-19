@@ -24,4 +24,4 @@ p2.mostrarFicha();
 
 console.log("--- Tras aplicar un 10% de descuento al primero ---");
 p1.aplicarDescuento(10);
-p1.mostrarFicha();recio: 1080
+p1.mostrarFicha();precio: 1080
