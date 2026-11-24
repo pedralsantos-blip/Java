@@ -1,4 +1,4 @@
-/ Interfaz: todo pedido debe poder entregarse e indicar si es urgente
+// Interfaz: todo pedido debe poder entregarse e indicar si es urgente
 interface Entregable {
     void entregar();
     boolean esUrgente();

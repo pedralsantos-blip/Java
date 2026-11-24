@@ -1,4 +1,4 @@
-/ Clase abstracta: no se puede hacer new Mascota(...)
+// Clase abstracta: no se puede hacer new Mascota(...)
 abstract class Mascota {
 
     protected String nombre;
