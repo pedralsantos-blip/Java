@@ -42,14 +42,17 @@ public class Pedido {
  // Punto de entrada principal para probar la clase exterior y su clase interna
  public static void main(String[] args) {
  // PASO 1: Primero creamos obligatoriamente el objeto exterior 'pedido'
- Pedido pedido = new Pedido("Ana");
+ Pedido pedido1= new Pedido("Ana");
+ Pedido pedido2 = new Pedido("Pepe");
  // PASO 2: A partir de ese objeto 'pedido' ya existente, creamos un objeto
  // de su clase interna usando 'pedido.new':
  // Crea una línea de 3 cuadernos vinculada al pedido de Ana
- Pedido.LineaPedido linea = pedido.new LineaPedido("Cuaderno", 3);
+ Pedido.LineaPedido linea1 = pedido1.new LineaPedido("Cuaderno", 3);
+ Pedido.LineaPedido linea2 = pedido2.new LineaPedido("Lápiz", 7);
  // PASO 3: Mostramos los datos de la línea (veremos que imprime "Ana",
  // "Cuaderno" y "3")
- linea.mostrarLinea();
+ linea1.mostrarLinea();
+ linea2.mostrarLinea();;
  // Cierra el método main
  }
 // Cierra la clase exterior Pedido
