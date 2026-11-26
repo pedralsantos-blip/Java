@@ -95,11 +95,11 @@ public class ProyectoFinalModulo2 {
  // Si su estado es PENDIENTE:
  if (tareas.get(i).getEstado() == EstadoTarea.PENDIENTE) {
  // Mensaje de aviso
- System.out.println("[!] Estado: Aún queda por hacer.");
+ System.out.println("[!] Estado: Aun queda por hacer.");
  // Si su estado es HECHA:
  } else {
  // Mensaje de confirmación
- System.out.println("[OK] Estado: Ya está terminada.");
+ System.out.println("[OK] Estado: Ya esta terminada.");
  // Cierra el condicional if-else
  }
  System.out.println("-------------------------------"
